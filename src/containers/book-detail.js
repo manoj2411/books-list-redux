@@ -9,10 +9,11 @@ class BookDetail extends React.Component {
       return <div>Select a book to get started!</div>;
     }
     return (
-      <p>
-        Book details:
-        { this.props.activeBook.title }
-      </p>
+      <div>
+        <h3>Book details:</h3>
+        <div>Title: { this.props.activeBook.title }</div>
+        <div>Pages: { this.props.activeBook.pages }</div>
+      </div>
     );
   }
 }
